@@ -1,33 +1,35 @@
-import { DefaultIcon } from "$ts/images/apps";
-import { Runtime } from "./runtime";
-import AppSvelte from "../App.svelte";
+import { ComponentIcon } from "$ts/images/general";
 import { App } from "$types/app";
+import AppSvelte from "../App.svelte";
+import { Runtime } from "./runtime";
 
-export const app: App = {
+export const FsProgress: App = {
   metadata: {
-    name: "App Template",
-    description: "This is an app template",
+    name: "FsProgress",
+    description: "Tells you how far filesystem operations are complete",
     author: "The ArcOS Team",
-    version: "0.0.0",
-    icon: DefaultIcon
+    version: "1.0.0",
+    icon: ComponentIcon,
+    noCloseAccelerator: true
   },
   runtime: Runtime,
   content: AppSvelte,
-  id: "appTemplate",
-  size: { w: 0, h: 0 },
-  minSize: { w: 0, h: 0 },
-  maxSize: { w: 0, h: 0 },
-  pos: { x: 0, y: 0 },
+  id: "FsProgress",
+  size: { w: 400, h: NaN },
+  minSize: { w: 400, h: 160 },
+  maxSize: { w: 400, h: NaN },
+  pos: { x: 300, y: 300 },
   state: {
     minimized: false,
     maximized: false,
-    headless: false,
+    headless: true,
     fullscreen: false,
     resizable: false
   },
   controls: {
-    minimize: false,
+    minimize: true,
     maximize: false,
     close: false
-  }
+  },
+  isOverlay: true
 }
