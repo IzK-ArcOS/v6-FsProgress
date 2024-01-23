@@ -1,77 +1,10 @@
+@import url("./bar.css");
+@import url("./display.css");
+@import url("./top.css");
+@import url("./bottom.css");
+
 #FsProgress div.body {
   height: 100%;
   padding: 0;
-}
-
-#FsProgress div.top {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-#FsProgress div.bar {
-  height: 7px;
-  width: 100%;
-  border: var(--button-glass-bg) 1px solid;
-  border-radius: 3.5px;
-  background-color: var(--button-glass-bg);
   overflow: hidden;
-}
-
-#FsProgress div.bar div.inner {
-  --max: 100;
-  --done: 0;
-  background-color: var(--accent);
-  height: 5px;
-  transition: none;
-  width: calc(100% / var(--max) * var(--done));
-}
-
-#FsProgress div.display {
-  display: flex;
-  gap: 15px;
-  align-items: start;
-}
-
-#FsProgress div.display img {
-  height: 32px;
-}
-#FsProgress div.display p {
-  margin: 0;
-}
-
-#FsProgress div.display p.caption {
-  font-weight: bold;
-}
-
-#FsProgress div.display p.subtitle {
-  opacity: 0.5;
-}
-
-#FsProgress div.bottom {
-  height: 51px;
-  background-color: var(--button-bg);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: var(--win-border);
-  padding: 0 10px;
-  padding-left: 20px;
-  text-align: left;
-}
-
-#FsProgress div.bottom button {
-  margin: 0;
-  height: 30px;
-}
-
-#FsProgress div.bottom button:not(.suggested) {
-  background-color: var(--button-glass-bg);
-}
-
-#FsProgress div.bottom div.sep {
-  width: 1px;
-  height: 20px;
-  background-color: var(--button-glass-bg);
 }

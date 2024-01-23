@@ -1,0 +1,26 @@
+#FsProgress div.bottom {
+  height: 51px;
+  background-color: var(--button-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: var(--win-border);
+  padding: 0 10px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+#FsProgress div.bottom button {
+  margin: 0;
+  height: 30px;
+}
+
+#FsProgress div.bottom button:not(.suggested) {
+  background-color: var(--button-glass-bg);
+}
+
+#FsProgress div.bottom div.sep {
+  width: 1px;
+  height: 20px;
+  background-color: var(--button-glass-bg);
+}
