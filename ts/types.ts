@@ -8,14 +8,21 @@ export interface FileOperation {
   done: number;
   max: number;
   cancel?: () => void;
+  waiting: boolean;
+  working: boolean;
+  errors: number;
 }
 
 export interface FileProgressMutator {
   progress: ReadableStore<FileOperation>;
   mutateMax: (mutator: number) => void;
-  mutateDone: (mutator: number) => void;
-  setDone: (value: number) => void;
+  mutDone: (mutator: number) => void;
+  mutErr: (mutator: number) => void;
   setMax: (value: number) => void;
+  setDone: (value: number) => void;
+  setErrors: (value: number) => void;
   updateCaption: (caption: string) => void;
-  updateSubtitle: (subtitle: string) => void;
+  updSub: (subtitle: string) => void;
+  setWait: (waiting: boolean) => void;
+  setWork: (waiting: boolean) => void;
 }

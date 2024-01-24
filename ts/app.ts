@@ -10,7 +10,8 @@ export const FsProgress: App = {
     author: "The ArcOS Team",
     version: "1.0.0",
     icon: ComponentIcon,
-    noCloseAccelerator: true
+    noCloseAccelerator: true,
+    hidden: true
   },
   runtime: Runtime,
   content: AppSvelte,
@@ -22,12 +23,12 @@ export const FsProgress: App = {
   state: {
     minimized: false,
     maximized: false,
-    headless: true,
+    headless: false,
     fullscreen: false,
     resizable: false
   },
   controls: {
-    minimize: true,
+    minimize: false,
     maximize: false,
     close: false
   },

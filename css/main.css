@@ -3,8 +3,16 @@
 @import url("./top.css");
 @import url("./bottom.css");
 
+#FsProgress {
+  display: flex;
+  flex-direction: column;
+}
+
 #FsProgress div.body {
   height: 100%;
   padding: 0;
   overflow: hidden;
+  flex-grow: 1;
+  display: Flex;
+  flex-direction: column;
 }
