@@ -11,7 +11,8 @@ export const FsProgress: App = {
     version: "1.0.0",
     icon: ComponentIcon,
     noCloseAccelerator: true,
-    hidden: true
+    hidden: true,
+    appGroup: "internal"
   },
   runtime: Runtime,
   content: AppSvelte,
