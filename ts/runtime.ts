@@ -44,7 +44,7 @@ export class Runtime extends AppRuntime {
           buttons: [{ caption: "Okay", action() { stop() }, suggested: true }],
           image: WarningIcon,
           sound: "arcos.dialog.warning"
-        }, 0)
+        }, this.process.parentPid || 0, !!this.process.parentPid)
       }
     });
   }
