@@ -28,11 +28,7 @@
   </p>
   <Status {runtime} />
 
-  <button
-    class="cancel"
-    disabled={!$Progress.cancel || canceling}
-    on:click={cancel}
-  >
+  <button class="cancel" disabled={!$Progress.cancel || canceling} on:click={cancel}>
     Cancel
   </button>
 </div>

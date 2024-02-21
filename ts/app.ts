@@ -12,7 +12,7 @@ export const FsProgress: App = {
     icon: ComponentIcon,
     noCloseAccelerator: true,
     hidden: true,
-    appGroup: "internal"
+    appGroup: "internal",
   },
   runtime: Runtime,
   content: AppSvelte,
@@ -26,12 +26,12 @@ export const FsProgress: App = {
     maximized: false,
     headless: false,
     fullscreen: false,
-    resizable: false
+    resizable: false,
   },
   controls: {
     minimize: false,
     maximize: false,
-    close: false
+    close: false,
   },
-  isOverlay: true
-}
+  isOverlay: true,
+};
