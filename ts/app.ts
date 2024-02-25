@@ -1,3 +1,4 @@
+import { SafeMode } from "$state/Desktop/ts/store";
 import { ComponentIcon } from "$ts/images/general";
 import { App } from "$types/app";
 import AppSvelte from "../App.svelte";
@@ -34,4 +35,5 @@ export const FsProgress: App = {
     close: false,
   },
   isOverlay: true,
+  loadCondition: () => !SafeMode.get(),
 };
